@@ -12,7 +12,7 @@ jobs:
   node:
     working_directory: ~/qr/node
     docker:
-    - image: circleci/node:8
+    - image: circleci/node:19
     steps:
     - checkout:
         path: ~/qr
@@ -32,7 +32,7 @@ jobs:
     working_directory: ~/qr/swift
     build:
         macos:
-            xcode: 13.1
+            xcode: 14.1
     steps:
     - checkout:
         path: ~/qr
